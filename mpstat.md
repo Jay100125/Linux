@@ -1,3 +1,4 @@
+# mpstat
 The `mpstat` command in Linux is a part of the **sysstat** package and is used for reporting CPU statistics. It provides information about CPU usage on a per-processor basis (useful for multi-core systems) and helps monitor the performance and load of individual CPU cores.
 
 ### **Basic Syntax:**

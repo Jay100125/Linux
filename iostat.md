@@ -35,7 +35,7 @@ loop10            0.00         0.00         0.00         0.00        349        
 
 #### -c  
 
-vms
+vmspis
 
 CPU stats
 

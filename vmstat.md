@@ -1,4 +1,5 @@
-The `vmstat` command in Linux provides detailed information about system performance, including processes, memory, swap, I/O, system, and CPU usage. Below is a summary of the different metrics you can obtain using `vmstat`.
+# vmstat
+The `vmstat` command in Linux provides detailed information about system performance, including processes, memory, swap, I/O, system, and CPU usage. 
 
 ### Command Syntax:
 ```bash
@@ -74,4 +75,3 @@ This option displays disk-related statistics.
 | **sectors** | Total number of sectors read | Sectors |
 | **ms** | Total time spent on read operations | Milliseconds |
 
-Let me know if you need further clarification on any of these!

@@ -67,3 +67,14 @@ Explanation of the Columns:
     RO: Whether the device is read-only (1 for yes, 0 for no).
     TYPE: The type of device (e.g., disk, part for partition).
     MOUNTPOINT: The mount point for the device or partition, if it is mounted. If it's not mounted, this will be empty.
+
+
+### Loop device
+
+A loop device in Linux is a pseudo-device that allows a file to be treated as a block device. Essentially, it enables you to mount a file (such as an ISO image or a disk image) as if it were a physical disk or partition.
+
+#### don't want to show loop device
+
+```
+ lsblk -e 7
+```

@@ -104,7 +104,7 @@ During monitoring of process which commands do what
 * r => Re-nice process ( after pressing r we are prompted to enter PID and it's new priority )
 * u => Display process for specific user 
         ```
-        top -u kartikey
+        top -u jay
         ```
 
 * c => Toggle between command name and full command
@@ -154,3 +154,18 @@ or
 ```bash
 export TOPMEM=G
 ```
+
+### VIRT
+The total amount of virtual memory used by the process, including all code, data, shared libraries, and memory that is swapped out.
+
+Includes:
+- Memory that the process can access (whether it is in RAM or on disk).
+- Shared libraries that are used by the process and other processes.
+- Memory mapped files.
+- Memory allocated but not necessarily used (e.g., heap and stack space).
+
+### RES
+The portion of the process's memory that is currently held in RAM (physical memory) and is not swapped out to disk.
+Includes:
+- The actual memory used by the process that resides in physical RAM.
+- Excludes memory that has been swapped out or is part of shared libraries.
