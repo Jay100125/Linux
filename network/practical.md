@@ -50,3 +50,32 @@ sudo ip route add <destination_network> via <gateway> dev <interface>
 ip route show dev wlp0s20f3
 netstat -rn | grep wlp0s20f3
 ```
+### 11.How to check reachability of port of multiple ip/ip ranges?
+```bash
+nmap -p 22 192.168.1.0/24 --open
+```
+
+### 12.How to check the IP address, subnet mask, and default gateway of a network interface?
+```bash
+ip addr show <interface-name>
+```
+
+### 13.How to configure a static IP address on a network interface?
+```bash
+
+
+```
+
+### 14.How to flush the DNS cache on your system?
+```bash
+sudo systemctl restart systemd-resolved
+```
+
+##### to check existing arp table = arp-a or ip neigh show
+
+### 15.How to add a static ARP entry to the ARP table?
+```bash
+sudo ip neigh add 192.168.1.100 lladdr AA:BB:CC:DD:EE:FF dev lo
+```
+Flush ARP Entry:
+Remove the outdated entry with sudo ip neigh del <IP> dev <interface>.
