@@ -17,3 +17,4 @@ jay@jay-ThinkPad-T14s-Gen-1:~/Documents/Linux_commands$ tcpdump -D
 7.nfqueue (Linux netfilter queue (NFQUEUE) interface) [none]
 8.bluetooth0 (Bluetooth adapter number 0) [none]
 ```
+

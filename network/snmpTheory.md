@@ -24,3 +24,22 @@ SNMP Manager’s key functions
 - Typically these MIB contains standard set of statistical and control values defined for hardware nodes on a network. SNMP also allows the extension of these standard values with values specific to a particular agent through the use of private MIBs.
 
 - In short, MIB files are the set of questions that a SNMP Manager can ask the agent. Agent collects these data locally and stores it, as defined in the MIB. So, the SNMP Manager should be aware of these standard and private questions for every type of agent.
+
+## There are two types of Managed Object or Object ID: Scalar and Tabular.
+- Scalar: Device’s vendor name, the result can be only one. (As definition says: "Scalar Object define a single object instance")
+
+- Tabular: CPU utilization of a Quad Processor, this would give me a result for each CPU separately, means there will be 4 results for that particular Object ID. (As definition says: "Tabular object defines multiple related object instance that are grouped together in MIB tables")
+
+- In practice this means that every OID you will deal with will either
+begin with .1.3.6.1.2 (the standard Management OIDs, that are
+vendor neutral); or .1.3.6.1.4.1 (the private OIDs. Each vendor can
+be assigned their own private number below .4.1, and then manage
+their own OID objects below this. Cisco Systems was allocated .9 -
+thus all Cisco Systems OIDs, for information they want to return that
+is specific to Cisco equipment, is under .1.3.6.1.4.1.9.) 
+
+
+
+
+
+- The definition of what information should be made available by the Agent, and requested by the Manager, goes in a MIB. A MIB is the "glue", a directory of what sort of things any particular system can/should offer. It maps numeric codes to names and types that allow us to make sense of the data, much like how a phone directory maps phone numbers to people's names and addresses.
